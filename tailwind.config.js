@@ -6,15 +6,16 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      blue: "#4A69E2",
-      yellow: "#FFA52F",
-      white: "#FFFFFF",
-      fa_white: "#FAFAFA",
-      gray: "#E7E7E3",
-      gray_main: "#70706E",
-      dark_gray: "#232321",
+    extend: {
+      colors: {
+        blue: "#4A69E2",
+        yellow: "#FFA52F",
+        white: "#FFFFFF",
+        fa_white: "#FAFAFA",
+        gray: "#E7E7E3",
+        gray_main: "#70706E",
+        dark_gray: "#232321",
+      },
     },
   },
   plugins: [],

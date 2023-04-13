@@ -1,6 +1,4 @@
 import React from "react";
-import { Rubik } from "next/font/google";
-const rubik = Rubik({ subsets: ["latin"] });
 import Link from "next/link";
 import Logo from "../../assets/logo_header.svg";
 import Image from "next/image";
@@ -11,7 +9,7 @@ import User from "../../assets/icons/user.svg";
 export function Header() {
   return (
     <header
-      className={`${rubik.className} p-8 flex justify-between bg-fa_white rounded-3xl	mt-8`}
+      className={`p-8 flex justify-between bg-fa_white rounded-3xl	mt-8`}
     >
       <div className="flex gap-10 font-bold items-center">
         <Link href="/">New Drops 🔥</Link>

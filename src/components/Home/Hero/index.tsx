@@ -5,14 +5,13 @@ import NikeMain from "../../../assets/tenis/nike_air_max1.png";
 import NikeMini1 from "../../../assets/tenis/nike_air_max2.png";
 import NikeMini2 from "../../../assets/tenis/nike_air_max3.png";
 
-import { Rubik } from "next/font/google";
 import BlueButton from "@/components/BlueButton";
-const rubik = Rubik({ subsets: ["latin"] });
+
 
 function Hero() {
   return (
-    <section className={rubik.className}>
-      <h1 className="text-[203.5px] uppercase font-bold">
+    <section>
+      <h1 className="text-[223.5px] uppercase font-bold">
         Do it <span className="text-blue">right</span>
       </h1>
 
@@ -30,7 +29,7 @@ function Hero() {
             <p className="text-white font-semibold text-2xl font-sans mb-6">
               Nike introducing the new air max for everyone&apos;s comfort
             </p>
-            <BlueButton text="Shop now" />
+            <BlueButton urlRedirect="/" text="Shop now" />
           </div>
         </div>
 
