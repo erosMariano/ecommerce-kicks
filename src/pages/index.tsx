@@ -7,18 +7,24 @@ import Review from "@/components/Home/Reviews";
 import NewsLetter from "@/components/NewsLetter";
 
 import { Rubik } from "next/font/google";
+import Head from "next/head";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`${rubik.className}`}>
-      <Header />
-      <Hero />
-      <NewDrops />
-      <Categories />
-      <Review />
-      <NewsLetter />
-      <Footer />
-    </main>
+    <>
+      <Head>
+        <title>Ecommerce - Kicks</title>
+      </Head>
+      <main className={`${rubik.className}`}>
+        <Header />
+        <Hero />
+        <NewDrops />
+        <Categories />
+        <Review />
+        <NewsLetter />
+        <Footer />
+      </main>
+    </>
   );
 }

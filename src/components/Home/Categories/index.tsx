@@ -35,10 +35,10 @@ function Categories() {
             />
 
             <div className="flex justify-between  pl-8 pr-14 items-end">
-              <h4 className="uppercase text-dark_gray font-bold text-4xl w-[191px]">
+              <h4 className="uppercase text-dark_gray font-bold text-4xl w-[191px] mb-8">
                 Lifestyle Shoes
               </h4>
-              <button className="bg-dark_gray p-2 rounded-lg">
+              <button className="bg-dark_gray p-2 rounded-lg mb-8 transition-all hover:bg-zinc-950">
                 <Image width={32} height={32} alt="Lifestyle Shoes" src={ArrowTrend} />
               </button>
             </div>
@@ -55,10 +55,10 @@ function Categories() {
             />
 
             <div className="flex justify-between  pl-8 pr-14 items-end">
-              <h4 className="uppercase text-dark_gray font-bold text-4xl w-[191px]">
+              <h4 className="uppercase text-dark_gray font-bold text-4xl w-[191px] mb-8">
                 Basketball Shoes
               </h4>
-              <button className="bg-dark_gray p-2 rounded-lg">
+              <button className="bg-dark_gray p-2 rounded-lg mb-8 transition-all hover:bg-zinc-950">
                 <Image width={32} height={32} alt="" src={ArrowTrend} />
               </button>
             </div>

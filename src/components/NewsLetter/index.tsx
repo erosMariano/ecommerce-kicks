@@ -20,7 +20,7 @@ function NewsLetter() {
               placeholder="Email address"
               className="h-12 w-full pl-4 bg-transparent border border-white rounded-lg text-white transition placeholder:text-gray outline-none focus:border-yellow"
             />
-            <button className="bg-dark_gray h-12 w-32 uppercase text-white rounded-lg">
+            <button className="bg-dark_gray h-12 w-32 uppercase text-white rounded-lg transition-all hover:bg-zinc-950">
               Submit
             </button>
           </div>
