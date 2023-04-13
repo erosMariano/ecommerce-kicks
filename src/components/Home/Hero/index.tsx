@@ -10,7 +10,7 @@ import BlueButton from "@/components/BlueButton";
 
 function Hero() {
   return (
-    <section>
+    <section className="max-w-[84.5rem] mx-auto px-4">
       <h1 className="text-[223.5px] uppercase font-bold">
         Do it <span className="text-blue">right</span>
       </h1>
