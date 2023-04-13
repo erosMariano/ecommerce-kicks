@@ -10,7 +10,7 @@ import AdidasDrop4 from "../../../assets/tenis/adidasDrop4.png";
 function NewDrops() {
   return (
     <section className="py-24">
-      <div className="max-w-[84.5rem] mx-auto">
+      <div className="max-w-[84.5rem] mx-auto  px-4">
         <div className="flex justify-between items-end text-dark_gray uppercase mb-8">
           <h2 className="text-7xl max-w-[589px] font-bold">
             Don&apos;t miss out new drops
