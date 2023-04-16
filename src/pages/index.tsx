@@ -6,8 +6,8 @@ import NewDrops from "@/components/Home/NewDrops";
 import Review from "@/components/Home/Reviews";
 import NewsLetter from "@/components/NewsLetter";
 
-import { Rubik } from "next/font/google";
 import Head from "next/head";
+import { Rubik } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export default function Home() {

@@ -1,11 +1,11 @@
 import BlueButton from "@/components/BlueButton";
 import React from "react";
-import ItemsDrops from "./ItemsDrops";
 
 import AdidasDrop1 from "../../../assets/tenis/adidasDrop1.png";
 import AdidasDrop2 from "../../../assets/tenis/adidasDrop2.png";
 import AdidasDrop3 from "../../../assets/tenis/adidasDrop3.png";
 import AdidasDrop4 from "../../../assets/tenis/adidasDrop4.png";
+import CardProduct from "@/components/CardProduct";
 
 function NewDrops() {
   return (
@@ -19,28 +19,28 @@ function NewDrops() {
         </div>
 
         <div className="flex justify-between gap-4">
-          <ItemsDrops
+          <CardProduct
             imgUrl={AdidasDrop1}
             price={125}
-            slug=""
+            slug="1"
             title="ADIDAS 4DFWD X PARLEY RUNNING SHOES"
           />
-          <ItemsDrops
+          <CardProduct
             imgUrl={AdidasDrop2}
             price={125}
-            slug=""
+            slug="2"
             title="ADIDAS 4DFWD X PARLEY RUNNING SHOES"
           />
-          <ItemsDrops
+          <CardProduct
             imgUrl={AdidasDrop3}
             price={125}
-            slug=""
+            slug="3"
             title="ADIDAS 4DFWD X PARLEY RUNNING SHOES"
           />
-          <ItemsDrops
+          <CardProduct
             imgUrl={AdidasDrop4}
             price={125}
-            slug=""
+            slug="4"
             title="ADIDAS 4DFWD X PARLEY RUNNING SHOES"
           />
         </div>

@@ -2,13 +2,13 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 
-interface PropsItemsProps {
+interface PropsCardProduct {
   imgUrl: string | StaticImageData;
   title: string;
   slug: string;
   price: number;
 }
-function ItemsDrops({ imgUrl, title, slug, price }: PropsItemsProps) {
+function CardProduct({ imgUrl, title, slug, price }: PropsCardProduct) {
   return (
     <div className="max-w-[318px] relative">
       <span className="absolute w-14 h-9 bg-blue rounded-tl-3xl rounded-br-3xl flex items-center justify-center font-semibold text-white left-[9px] top-[9px] text-xs">
@@ -35,4 +35,4 @@ function ItemsDrops({ imgUrl, title, slug, price }: PropsItemsProps) {
   );
 }
 
-export default ItemsDrops;
+export default CardProduct;
