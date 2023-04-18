@@ -23,7 +23,7 @@ export default function Home() {
         <Categories />
         <Review />
         <NewsLetter />
-        <Footer />
+        <Footer /> 
       </main>
     </>
   );

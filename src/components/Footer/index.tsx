@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className="-mt-10">
       <div className="max-w-[84.5rem] mx-auto pt-16 pl-16 bg-dark_gray rounded-tr-[48px] rounded-tl-[48px] flex gap-32 pb-80 relative">
-        <div className="w-[446px]">
+        <div className="w-[27.875rem]">
           <h4 className="text-yellow font-semibold text-4xl mb-1">About us</h4>
           <p className="text-gray text-xl font-normal">
             We are the biggest hyperstore in the universe. We got you all cover

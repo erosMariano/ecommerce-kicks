@@ -25,7 +25,7 @@ function Categories() {
         </div>
 
         <div className="flex">
-          <div className="bg-[#ECEEF0] w-[690px] rounded-tl-[64px]">
+          <div className="bg-[#ECEEF0] w-[43.125rem] rounded-tl-[64px]">
             <Image
               width={480}
               height={600}
@@ -35,7 +35,7 @@ function Categories() {
             />
 
             <div className="flex justify-between  pl-8 pr-14 items-end">
-              <h4 className="uppercase text-dark_gray font-bold text-4xl w-[191px] mb-8">
+              <h4 className="uppercase text-dark_gray font-bold text-4xl w-[11.9375rem] mb-8">
                 Lifestyle Shoes
               </h4>
               <button className="bg-dark_gray p-2 rounded-lg mb-8 transition-all hover:bg-zinc-950">
@@ -44,7 +44,7 @@ function Categories() {
             </div>
           </div>
 
-          <div className="bg-[#F6F6F6] w-[690px] rounded-tr-[64px]">
+          <div className="bg-[#F6F6F6] w-[43.125rem] rounded-tr-[64px]">
             <Image
               width={480}
               height={600}

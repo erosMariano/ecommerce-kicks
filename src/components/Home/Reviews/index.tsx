@@ -15,7 +15,7 @@ function Review() {
     <section className="pt-24 pb-24">
       <div className="max-w-[84.5rem] mx-auto pt-24 px-4">
         <div className="flex justify-between items-end uppercase mb-12">
-          <h2 className="text-7xl max-w-[589px] font-bold text-dark_gray">
+          <h2 className="text-7xl max-w-[36.8125rem] font-bold text-dark_gray">
             Reviews
           </h2>
           <BlueButton text="See a ll" urlRedirect={"/"} />

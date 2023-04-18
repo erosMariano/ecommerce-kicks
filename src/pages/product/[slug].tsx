@@ -13,11 +13,12 @@ import PhotosContainer from "@/components/Products/PhotosContainer";
 import { DetailsProduct } from "@/components/Products/DetailsProduct";
 
 import { Rubik } from "next/font/google";
+import Related from "@/components/Products/Related";
 const rubik = Rubik({ subsets: ["latin"] });
 
 interface ProductRelated {
+  imgUrl: string | StaticImageData;
   title: string;
-  images: string[] | StaticImageData;
   price: number;
 }
 
@@ -37,9 +38,9 @@ interface ProductDetails {
 }
 function Product() {
   const ProductRelated: ProductRelated = {
-    images: ProductRelatedImg,
     title: "ADIDAS 4DFWD X PARLEY RUNNING SHOES",
     price: 124,
+    imgUrl: ProductRelatedImg,
   };
 
   const [product, setProduct] = useState<ProductDetails>({
@@ -48,8 +49,6 @@ function Product() {
     colors: ["#4A69E2", "#65e800"],
     price: 0,
     related: [
-      ProductRelated,
-      ProductRelated,
       ProductRelated,
       ProductRelated,
       ProductRelated,
@@ -79,6 +78,7 @@ function Product() {
         <PhotosContainer images={product.images} />
         <DetailsProduct colors={product.colors} sizes={product.sizes} />
       </section>
+      <Related related={product.related} />
       <NewsLetter />
       <Footer />
     </main>
