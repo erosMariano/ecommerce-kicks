@@ -1,13 +1,16 @@
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import NewsLetter from "@/components/NewsLetter";
-import { Rubik } from "next/font/google";
+
 import Image from "next/image";
 import ArrowBottom from "../assets/icons/arrowBottom.svg";
 import ImageBanner from "../assets/product/bannerList.png";
 
 import Filters from "@/components/ListPage/Filters";
 import ListProduct from "@/components/ListPage/ListProducts";
+
+
+import { Rubik } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
 
 function ProductList() {

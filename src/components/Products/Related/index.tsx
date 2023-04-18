@@ -22,7 +22,7 @@ function Related({ related }: RelatedProps) {
   const formatSlug = String(related[0].title).toLocaleLowerCase().replaceAll(" ", "-")
 
   return (
-    <section className="mt-32 mb-24">
+    <section className="mb-24">
       <div className="max-w-[84.5rem] mx-auto px-4">
         <div className="flex items-end justify-between">
           <h2 className="text-5xl font-bold">You may also like</h2>
