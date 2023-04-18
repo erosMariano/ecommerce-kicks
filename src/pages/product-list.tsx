@@ -10,7 +10,7 @@ import Filters from "@/components/ListPage/Filters";
 import ListProduct from "@/components/ListPage/ListProducts";
 const rubik = Rubik({ subsets: ["latin"] });
 
-function ListPage() {
+function ProductList() {
   return (
     <>
       <Header />
@@ -68,4 +68,4 @@ function ListPage() {
   );
 }
 
-export default ListPage;
+export default ProductList;
