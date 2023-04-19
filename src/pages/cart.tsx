@@ -58,7 +58,6 @@ function Cart() {
           </div>
         </section>
       </main>
-
       <Related related={related} />
       <NewsLetter />
       <Footer />
