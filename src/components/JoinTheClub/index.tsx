@@ -4,7 +4,7 @@ import React from "react";
 import ArrowIcon from "../../assets/icons/arrow_forward.svg";
 export function JoinInTheClub() {
   return (
-    <div className="bg-white py-6 px-8 rounded-2xl flex flex-col flex-1 max-w-[44rem]">
+    <div className="bg-white py-6 px-6 lg:px-8 rounded-2xl flex flex-col flex-1 lg:max-w-[44rem]">
       <h2 className="text-4xl font-semibold mb-6 text-dark_gray">Join Kicks Club Get Rewarded Today.</h2>
       <p className="text-dark_gray font-sans font-semibold opacity-80 mb-6">
         As kicks club member you get rewarded with what you love for doing what
@@ -19,7 +19,7 @@ export function JoinInTheClub() {
         <li>• Access to adidas Running and Training apps</li>
         <li>• Special offers and promotions</li>
       </ul>
-      <p className="text-dark_gray font-sans font-semibold opacity-80 mb-16">
+      <p className="text-dark_gray font-sans font-semibold opacity-80 mb-10 lg:mb-16">
         Join now to start earning points, reach new levels and unlock more
         rewards and benefits from adiClub.
       </p>

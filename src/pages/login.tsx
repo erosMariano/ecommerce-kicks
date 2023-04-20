@@ -25,11 +25,11 @@ export default function Login() {
 
       <Header />
       <main className={`${rubik.className}`}>
-        <section className="max-w-[84.5rem] mx-auto px-4 flex gap-12 mt-8 mb-14">
-          <div className="w-[544px] px-10">
+        <section className="max-w-[84.5rem] mx-auto px-4 flex flex-col lg:flex-row gap-12 mt-8 mb-14 justify-between">
+          <div className="w-full lg:w-[544px] px-0 lg:px-10 ">
             <form className="flex flex-col gap-6">
               <div>
-                <h2 className="text-3xl font-semibold  text-dark_gray mb-2">
+                <h2 className="text-3xl font-semibold text-dark_gray mb-2">
                   Login
                 </h2>
                 <Link href="#" className="font-sans text-base font-semibold">
@@ -46,7 +46,7 @@ export default function Login() {
                 <input
                   id="check1"
                   type="checkbox"
-                  className="h-4 w-4 transition cursor-pointer  font-medium border-2 border-solid border-#000000 rounded appearance-none checked:bg-yellow checked:border-yellow-400 checked:text-white"
+                  className="h-4 w-4 transition cursor-pointer font-medium border-2 border-solid border-#000000 rounded appearance-none checked:bg-yellow checked:border-yellow-400 checked:text-white"
                 />
                 <span className="text-dark_gray text-base font-sans font-semibold w-full block">
                   Keep me logged in - applies to all log in options below. More
@@ -60,24 +60,25 @@ export default function Login() {
                 Email Login{" "}
                 <Image src={ArrowIcon} alt="" width={16} height={16} />
               </Link>
+
+              <div className="flex gap-6 justify-between items-center mt-6">
+                <button className="lg:px-12 px-5 py-4 rounded-xl border border-dark_gray">
+                  <Image src={GoogleIcon} width={32} height={32} alt="" />
+                </button>
+                <button className="lg:px-12 px-5 py-4 rounded-xl border border-dark_gray">
+                  <Image src={AppleIcon} width={32} height={32} alt="" />
+                </button>
+                <button className="lg:px-12 px-5 py-4 rounded-xl border border-dark_gray">
+                  <Image src={FacebookIcon} width={32} height={32} alt="" />
+                </button>
+              </div>
+
+              <p className="text-dark_gray text-base font-sans font-semibold w-full block mt-6">
+                By clicking &apos;Log In&apos; you agree to our website
+                KicksClub Terms &amp; Conditions, Kicks Privacy Notice and Terms
+                &amp; Conditions.
+              </p>
             </form>
-
-            <div className="flex gap-6 justify-between mt-6">
-              <button className="px-12 py-4 rounded-xl border border-dark_gray">
-                <Image src={GoogleIcon} width={32} height={32} alt="" />
-              </button>
-              <button className="px-12 py-4 rounded-xl border border-dark_gray">
-                <Image src={AppleIcon} width={32} height={32} alt="" />
-              </button>
-              <button className="px-12 py-4 rounded-xl border border-dark_gray">
-                <Image src={FacebookIcon} width={32} height={32} alt="" />
-              </button>
-            </div>
-
-            <p className="text-dark_gray text-base font-sans font-semibold w-full block mt-6">
-              By clicking &apos;Log In&apos; you agree to our website KicksClub
-              Terms & Conditions, Kicks Privacy Notice and Terms & Conditions.
-            </p>
           </div>
           <JoinInTheClub />
         </section>

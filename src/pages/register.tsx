@@ -24,8 +24,8 @@ export default function Login() {
       </Head>
       <Header />
       <main className={`${rubik.className}`}>
-        <section className="max-w-[84.5rem] mx-auto px-4 flex gap-12 mt-8 mb-6 items-start">
-          <div className="w-[544px] px-10">
+        <section className="max-w-[84.5rem] mx-auto px-4 flex flex-col gap-12 mt-8 mb-14 lg:flex-row items-start">
+          <div className="lg:w-[544px] lg:px-10">
             <div>
               <h2 className="text-3xl font-semibold  text-dark_gray mb-2">
                 Register
@@ -36,13 +36,13 @@ export default function Login() {
             </div>
 
             <div className="flex gap-6 justify-between mt-6">
-              <button className="px-12 py-4 rounded-xl border border-dark_gray">
+              <button className="lg:px-12 px-5 lg:py-4 rounded-xl border border-dark_gray">
                 <Image src={GoogleIcon} width={32} height={32} alt="" />
               </button>
-              <button className="px-12 py-4 rounded-xl border border-dark_gray">
+              <button className="lg:px-12 px-5 py-4 rounded-xl border border-dark_gray">
                 <Image src={AppleIcon} width={32} height={32} alt="" />
               </button>
-              <button className="px-12 py-4 rounded-xl border border-dark_gray">
+              <button className="lg:px-12 px-5 py-4 rounded-xl border border-dark_gray">
                 <Image src={FacebookIcon} width={32} height={32} alt="" />
               </button>
             </div>
@@ -161,8 +161,8 @@ export default function Login() {
           </div>
           <JoinInTheClub />
         </section>
-        <NewsLetter />
-        <Footer />
+        {/* <NewsLetter />
+        <Footer /> */}
       </main>
     </>
   );
