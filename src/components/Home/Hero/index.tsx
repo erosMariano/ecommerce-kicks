@@ -29,7 +29,7 @@ function Hero() {
             <p className="text-white font-semibold text-2xl font-sans mb-6">
               Nike introducing the new air max for everyone&apos;s comfort
             </p>
-            <BlueButton urlRedirect="/" text="Shop now" />
+            <BlueButton urlRedirect="/product/1" text="Shop now" />
           </div>
         </div>
 

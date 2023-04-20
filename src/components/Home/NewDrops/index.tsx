@@ -15,7 +15,7 @@ function NewDrops() {
           <h2 className="text-7xl max-w-[589px] font-bold">
             Don&apos;t miss out new drops
           </h2>
-          <BlueButton text="Shop New Drops" urlRedirect={"/"} />
+          <BlueButton text="Shop New Drops" urlRedirect={"/product-list"} />
         </div>
 
         <div className="flex justify-between gap-4">

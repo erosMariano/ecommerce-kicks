@@ -1,6 +1,11 @@
+import { useRouter } from "next/router";
 import React from "react";
 
 function Summary() {
+  const route = useRouter()
+  function handleSendCheckout(){
+    route.push("/checkout")
+  }
   return (
     <div className="flex flex-1 w-full flex-col">
       <h2 className="font-semibold text-3xl mb-2 text-dark_gray">
@@ -34,7 +39,7 @@ function Summary() {
           </span>
           <span className="text-2xl font-bold font-sans text-dark_gray opacity-80">$136.99</span>
         </div>
-        <button className="w-full flex items-center justify-center bg-dark_gray text-sm uppercase text-white py-4 rounded-lg transition-all hover:bg-zinc-950 mt-7">Checkout</button>
+        <button onClick={handleSendCheckout} className="w-full flex items-center justify-center bg-dark_gray text-sm uppercase text-white py-4 rounded-lg transition-all hover:bg-zinc-950 mt-7">Checkout</button>
       </div>
     </div>
   );

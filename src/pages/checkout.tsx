@@ -5,11 +5,16 @@ import { Header } from "@/components/Header";
 import NewsLetter from "@/components/NewsLetter";
 
 import { Rubik } from "next/font/google";
+import Head from "next/head";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export default function Checkout() {
   return (
     <>
+      <Head>
+        <title>Checkout - Kicks</title>
+      </Head>
+
       <Header />
       <main className={`${rubik.className}`}>
         <section className="max-w-[84.5rem] mx-auto px-4">

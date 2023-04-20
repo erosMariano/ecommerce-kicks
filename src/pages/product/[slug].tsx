@@ -14,6 +14,7 @@ import { DetailsProduct } from "@/components/Products/DetailsProduct";
 
 import { Rubik } from "next/font/google";
 import Related from "@/components/Products/Related";
+import Head from "next/head";
 const rubik = Rubik({ subsets: ["latin"] });
 
 interface ProductRelated {
@@ -48,12 +49,7 @@ function Product() {
     images: [Product1, Product2, Product3, Product4],
     colors: ["#4A69E2", "#65e800"],
     price: 0,
-    related: [
-      ProductRelated,
-      ProductRelated,
-      ProductRelated,
-      ProductRelated,
-    ],
+    related: [ProductRelated, ProductRelated, ProductRelated, ProductRelated],
     tag: "",
     sizes: [
       {
@@ -72,16 +68,21 @@ function Product() {
   });
 
   return (
-    <main className={rubik.className}>
-      <Header />
-      <section className="max-w-[84.5rem] mx-auto pt-24 flex gap-4 mb-32">
-        <PhotosContainer images={product.images} />
-        <DetailsProduct colors={product.colors} sizes={product.sizes} />
-      </section>
-      <Related related={product.related} />
-      <NewsLetter />
-      <Footer />
-    </main>
+    <>
+      <Head>
+        <title>ADIDAS 4DFWD X PARLEY RUNNING SHOES - Kicks</title>
+      </Head>
+      <main className={rubik.className}>
+        <Header />
+        <section className="max-w-[84.5rem] mx-auto pt-24 flex gap-4 mb-32">
+          <PhotosContainer images={product.images} />
+          <DetailsProduct colors={product.colors} sizes={product.sizes} />
+        </section>
+        <Related related={product.related} />
+        <NewsLetter />
+        <Footer />
+      </main>
+    </>
   );
 }
 

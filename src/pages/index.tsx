@@ -14,7 +14,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ecommerce - Kicks</title>
+        <title>Home - Kicks</title>
+        <meta
+          name="description"
+          content="Confira a melhor seleção de tênis na nossa loja online especializada! Temos os modelos mais recentes das marcas mais famosas, com preços incríveis e envio para todo o Brasil. Compre agora e arrase com um visual moderno e confortável!"
+        />
       </Head>
       <main className={`${rubik.className}`}>
         <Header />
@@ -23,7 +27,7 @@ export default function Home() {
         <Categories />
         <Review />
         <NewsLetter />
-        <Footer /> 
+        <Footer />
       </main>
     </>
   );

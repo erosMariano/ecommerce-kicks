@@ -12,12 +12,16 @@ import Link from "next/link";
 import GoogleIcon from "../assets/icons/google.svg";
 import AppleIcon from "../assets/icons/apple.svg";
 import FacebookIcon from "../assets/icons/facebook2.svg";
+import Head from "next/head";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
 export default function Login() {
   return (
     <>
+      <Head>
+        <title>Cadastro - Kicks</title>
+      </Head>
       <Header />
       <main className={`${rubik.className}`}>
         <section className="max-w-[84.5rem] mx-auto px-4 flex gap-12 mt-8 mb-6 items-start">
@@ -129,8 +133,9 @@ export default function Login() {
                   className="h-4 w-4 transition cursor-pointer  font-medium border-2 border-solid border-#000000 rounded appearance-none checked:bg-yellow checked:border-yellow-400 checked:text-white"
                 />
                 <span className="text-dark_gray text-base font-sans font-semibold w-full block">
-                  By clicking &apos;Log In&apos; you agree to our website KicksClub Terms
-                  & Conditions, Kicks Privacy Notice and Terms & Conditions.
+                  By clicking &apos;Log In&apos; you agree to our website
+                  KicksClub Terms & Conditions, Kicks Privacy Notice and Terms &
+                  Conditions.
                 </span>
               </label>
 

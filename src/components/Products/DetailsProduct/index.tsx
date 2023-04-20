@@ -5,6 +5,7 @@ import BlueButton from "@/components/BlueButton";
 import Colors from "../Colors";
 import Image from "next/image";
 import Sizes from "../Sizes";
+import { useRouter } from "next/router";
 
 interface SizeProps {
   size: number;
@@ -16,6 +17,11 @@ interface DetailsProductProps {
   sizes: SizeProps[];
 }
 export function DetailsProduct({ colors, sizes }: DetailsProductProps) {
+  const route = useRouter();
+  function handleAddToCart() {}
+  function handleBuyNow() {
+    route.push("/cart")
+  }
   return (
     <div>
       <Tag name="New Release" />
@@ -25,19 +31,22 @@ export function DetailsProduct({ colors, sizes }: DetailsProductProps) {
       <span className="text-blue font-semibold text-2xl">$125.00</span>
 
       <Colors colors={colors} />
-      
+
       <Sizes sizes={sizes} />
 
       <div className="buttons mt-8">
         <div className="flex gap-2">
-          <button className="flex-1 bg-dark_gray h-12 uppercase text-white rounded-lg transition hover:bg-zinc-950">
+          <button
+            onClick={handleAddToCart}
+            className="flex-1 bg-dark_gray h-12 uppercase text-white rounded-lg transition hover:bg-zinc-950"
+          >
             Add to cart
           </button>
           <button className="bg-dark_gray text-sm h-12 w-12 flex items-center justify-center rounded-lg transition hover:bg-zinc-950">
             <Image src={HeartIcon} width={16} height={16} alt="icon coração" />
           </button>
         </div>
-        <button className="bg-blue h-12 text-sm uppercase flex items-center justify-center rounded-lg w-full text-white font-medium mt-2 transition hover:brightness-90">
+        <button onClick={handleBuyNow} className="bg-blue h-12 text-sm uppercase flex items-center justify-center rounded-lg w-full text-white font-medium mt-2 transition hover:brightness-90">
           Buy it now
         </button>
       </div>

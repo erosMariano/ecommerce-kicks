@@ -10,6 +10,7 @@ import { StaticImageData } from "next/image";
 import Link from "next/link";
 import Bag from "@/components/Cart/Bag";
 import Summary from "@/components/Cart/Summary";
+import Head from "next/head";
 
 interface ProductRelated {
   imgUrl: string | StaticImageData;
@@ -32,6 +33,10 @@ function Cart() {
   ];
   return (
     <>
+      <Head>
+        <title>Carrinho - Kicks</title>
+      </Head>
+
       <Header />
       <main className={rubik.className}>
         <section className="max-w-[84.5rem] mx-auto px-4 mt-8">
@@ -43,11 +48,11 @@ function Cart() {
             - while suppiles last. No code needed.
           </p>
           <div className="text-dark_gray">
-            <Link href="#" className="underline">
+            <Link href="/login" className="underline">
               Join us
             </Link>{" "}
             or{" "}
-            <Link href="#" className="underline">
+            <Link href="/register" className="underline">
               Sign-in
             </Link>
           </div>

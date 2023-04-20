@@ -9,13 +9,17 @@ import ImageBanner from "../assets/product/bannerList.png";
 import Filters from "@/components/ListPage/Filters";
 import ListProduct from "@/components/ListPage/ListProducts";
 
-
 import { Rubik } from "next/font/google";
+import Head from "next/head";
 const rubik = Rubik({ subsets: ["latin"] });
 
 function ProductList() {
   return (
     <>
+      <Head>
+        <title>Lista de Produtos - Kicks</title>
+      </Head>
+
       <Header />
       <main className={rubik.className}>
         <div className="max-w-[84.5rem] mx-auto px-4">
