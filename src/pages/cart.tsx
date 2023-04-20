@@ -56,7 +56,7 @@ function Cart() {
             </Link>
           </div>
 
-          <div className="flex gap-12 mt-8 mb-10">
+          <div className="flex xl:gap-12 mt-8 mb-10 flex-col lg:flex-row gap-6">
             <Bag />
             <Summary />
           </div>

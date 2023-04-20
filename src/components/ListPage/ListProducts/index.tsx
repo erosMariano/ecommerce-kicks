@@ -8,47 +8,44 @@ import Image from "next/image";
 
 function ListProduct() {
   return (
-    <div className="w-full flex flex-col flex-1">
-      <div className="flex flex-1 gap-x-4 gap-y-9 flex-wrap justify-end">
-        <CardProduct
-          imgUrl={ProductImage}
-          price={125}
-          slug="produto-teste"
-          title="Produto teste"
-        />
-        <CardProduct
-          imgUrl={ProductImage}
-          price={125}
-          slug="produto-teste"
-          title="Produto teste"
-        />{" "}
-        <CardProduct
-          imgUrl={ProductImage}
-          price={125}
-          slug="produto-teste"
-          title="Produto teste"
-        />{" "}
-        <CardProduct
-          imgUrl={ProductImage}
-          price={125}
-          slug="produto-teste"
-          title="Produto teste"
-        />{" "}
-        <CardProduct
-          imgUrl={ProductImage}
-          price={125}
-          slug="produto-teste"
-          title="Produto teste"
-        />
-        <CardProduct
-          imgUrl={ProductImage}
-          price={125}
-          slug="produto-teste"
-          title="Produto teste"
-        />
+    <div className="w-full flex flex-col flex-1 h-fit">
+      <div className="flex flex-col lg:flex-row flex-1 gap-x-2 lg:gap-x-4 gap-y-9 justify-end mb-6">
+        <div className="w-full lg:max-w-[19.875rem] h-fit">
+          <CardProduct
+            imgUrl={ProductImage}
+            price={125}
+            slug="produto-teste"
+            title="Produto teste"
+          />
+        </div>
+        <div className="w-full lg:max-w-[19.875rem]">
+          <CardProduct
+            imgUrl={ProductImage}
+            price={125}
+            slug="produto-teste"
+            title="Produto teste"
+          />
+        </div>
+
+        <div className="w-full lg:max-w-[19.875rem]">
+          <CardProduct
+            imgUrl={ProductImage}
+            price={125}
+            slug="produto-teste"
+            title="Produto teste"
+          />
+        </div>
+        <div className="w-full lg:max-w-[19.875rem]">
+          <CardProduct
+            imgUrl={ProductImage}
+            price={125}
+            slug="produto-teste"
+            title="Produto teste"
+          />
+        </div>
       </div>
 
-      <div className="flex items-center justify-center gap-4 mt-16 mb-14">
+      <div className="hidden lg:flex items-center justify-center gap-4 mt-16 mb-14">
         <button className="flex gap-1 uppercase px-4 rounded-lg border items-center h-8">
           <Image src={ArrowPrev} alt="" width={16} height={16} /> Previous
         </button>
@@ -64,7 +61,7 @@ function ListProduct() {
           Next
           <Image src={ArrowNext} alt="" width={16} height={16} />
         </button>
-      </div>
+      </div> 
     </div>
   );
 }
