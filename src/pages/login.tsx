@@ -32,7 +32,7 @@ export default function Login() {
                 </Link>
               </div>
               <InputElement placeholder="Email" type="email" />
-              <InputElement placeholder="Email" type="email" />
+              <InputElement placeholder="Password" type="password" />
 
               <label
                 htmlFor="check1"
