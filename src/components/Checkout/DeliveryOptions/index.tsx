@@ -73,13 +73,13 @@ export function DeliveryOptions() {
               type="checkbox"
               className="h-4 transition w-4 mr-2 cursor-pointer font-medium border-2 border-solid border-#000000 rounded appearance-none checked:bg-yellow checked:border-yellow-400 checked:text-white"
             />
-            <span className="text-dark_gray text-base font-sans font-semibold">
+            <span className="text-dark_gray text-base font-sans font-semibold w-fit">
               Yes, I&apos;d like to receive emails about exclusive sales and
               more.
             </span>
           </label>
 
-          <button type="submit" className="w-[22.625rem] h-12 rounded-lg flex items-center justify-center text-sm uppercase text-white bg-dark_gray mt-11">Review AND PAY</button>
+          <button type="submit" className="w-full lg:w-[22.625rem] h-12 rounded-lg flex items-center justify-center text-sm uppercase text-white bg-dark_gray mt-11">Review AND PAY</button>
         </div>
       </div>
     </div>

@@ -1,16 +1,15 @@
-import React from "react";
-import { Rubik } from "next/font/google";
-import { Header } from "@/components/Header";
-import Footer from "@/components/Footer";
-import NewsLetter from "@/components/NewsLetter";
-import Related from "@/components/Products/Related";
-const rubik = Rubik({ subsets: ["latin"] });
-import ProductRelatedImg from "../assets/tenis/adidasDrop1.png";
-import { StaticImageData } from "next/image";
-import Link from "next/link";
 import Bag from "@/components/Cart/Bag";
 import Summary from "@/components/Cart/Summary";
+import Footer from "@/components/Footer";
+import { Header } from "@/components/Header";
+import NewsLetter from "@/components/NewsLetter";
+import Related from "@/components/Products/Related";
+import { Rubik } from "next/font/google";
 import Head from "next/head";
+import { StaticImageData } from "next/image";
+import Link from "next/link";
+import ProductRelatedImg from "../assets/tenis/adidasDrop1.png";
+const rubik = Rubik({ subsets: ["latin"] });
 
 interface ProductRelated {
   imgUrl: string | StaticImageData;
