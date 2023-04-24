@@ -74,7 +74,7 @@ function Product() {
       </Head>
       <main className={rubik.className}>
         <Header />
-        <section className="max-w-[84.5rem] mx-auto pt-24 flex gap-4 mb-32">
+        <section className="max-w-[84.5rem] mx-auto px-4 pt-6 xl:pt-24 flex gap-16  mb-32 justify-between flex-col xl:gap-32 lg:flex-row">
           <PhotosContainer images={product.images} />
           <DetailsProduct colors={product.colors} sizes={product.sizes} />
         </section>

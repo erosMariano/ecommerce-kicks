@@ -23,9 +23,9 @@ export function DetailsProduct({ colors, sizes }: DetailsProductProps) {
     route.push("/cart")
   }
   return (
-    <div>
+    <div className="mt-10 xl:mt-0">
       <Tag name="New Release" />
-      <h1 className="my-3 uppercase text-dark_gray text-3xl font-semibold ">
+      <h1 className="my-3 uppercase text-dark_gray text-3xl font-semibold">
         ADIDAS 4DFWD X PARLEY RUNNING SHOES
       </h1>
       <span className="text-blue font-semibold text-2xl">$125.00</span>
