@@ -13,7 +13,7 @@ function BlueButton({ text, urlRedirect }: ButtonProps) {
   return (
     <button
       onClick={handleRedirectUser}
-      className="px-8 py-4 bg-blue text-white rounded-lg transition-all hover:brightness-90 uppercase text-sm"
+      className="py-3 px-4 lg:px-8 w-max lg:py-4 bg-blue text-white rounded-lg transition-all hover:brightness-90 uppercase text-sm"
     >
       {text}
     </button>

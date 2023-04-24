@@ -12,16 +12,16 @@ import Person3 from "../../../assets/person3.png";
 
 function Review() {
   return (
-    <section className="pt-24 pb-24">
-      <div className="max-w-[84.5rem] mx-auto pt-24 px-4">
-        <div className="flex justify-between items-end uppercase mb-12">
-          <h2 className="text-7xl max-w-[36.8125rem] font-bold text-dark_gray">
+    <section className="pt-0 lg:pt-24 pb-6 lg:pb-24">
+      <div className="max-w-[84.5rem] mx-auto pt-6 lg:pt-24 px-4">
+        <div className="flex justify-between items-end uppercase mb-6 lg:mb-12">
+          <h2 className="text-2xl lg:text-7xl max-w-[36.8125rem] font-bold text-dark_gray">
             Reviews
           </h2>
           <BlueButton text="See a ll" urlRedirect={"/"} />
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col lg:flex-row gap-4">
           <ItemReview
             quantityStar={5}
             imgUrlPoster={ImagePoster1}
@@ -34,10 +34,7 @@ function Review() {
             imgUrlPoster={ImagePoster2}
             photoUser={Person2}
             title="High Quality"
-            description="Find your perfect pair at Kicks - exceptional quality guaranteed.
-
-
-"
+            description="Find your perfect pair at Kicks - exceptional quality guaranteed."
           />
           <ItemReview
             quantityStar={5}

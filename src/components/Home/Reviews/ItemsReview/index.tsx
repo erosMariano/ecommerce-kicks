@@ -15,19 +15,19 @@ function ItemReview({
   photoUser,
   quantityStar,
   title,
-  description
+  description,
 }: ItemReviewProps) {
   const newQuantityStar = Array.from({ length: quantityStar }, (_, i) => i);
-  
+
   return (
-    <div className="bg-fa_white max-w-[429px] rounded-t-[32px] rounded-b-[32px]">
+    <div className="bg-fa_white w-full lg:max-w-[429px] rounded-t-[32px] rounded-b-[32px] flex flex-col">
       <div className="px-8 pt-8 flex justify-between items-start">
         <div>
           <span className="text-dark_gray text-2xl font-bold mb-2">
             {title}
           </span>
           <p className="font-normal font-sans text-base mb-2 text-dark_gray">
-           {description}
+            {description}
           </p>
         </div>
         <Image
@@ -41,17 +41,14 @@ function ItemReview({
 
       <div className="pl-8 flex items-center pb-8">
         {newQuantityStar.map((el, index) => (
-          <Image src={Star} width={24} height={24} alt="star" key={index}/>
+          <Image src={Star} width={24} height={24} alt="star" key={index} />
         ))}
         <span>{newQuantityStar.length}.0</span>
       </div>
-      <Image
-        src={imgUrlPoster}
-        width={429}
-        height={325}
-        alt=""
-        className="rounded-b-[32px]"
-      />
+
+      <div className="flex-1 flex">
+        <Image src={imgUrlPoster} alt="" className="rounded-b-[32px] flex-1 object-cover" />
+      </div>
     </div>
   );
 }

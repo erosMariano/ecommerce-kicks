@@ -14,7 +14,7 @@ const rubik = Rubik({ subsets: ["latin"] });
 function Footer() {
   return (
     <footer className={`-mt-16 ${rubik.className}`}>
-      <div className="max-w-[84.5rem] mx-auto pt-6 lg:pt-16 px-4 lg:pl-16 bg-dark_gray lg:rounded-tr-[48px] rounded-3xl lg:rounded-tl-[48px] flex flex-col lg:flex-row gap-10 lg:gap-32 pb-32 lg:pb-80 relative">
+      <div className="max-w-[84.5rem] mx-auto pt-6 lg:pt-16 px-4 lg:pl-16 bg-dark_gray lg:rounded-tr-[48px] rounded-tl-3xl lg:rounded-tl-[48px] flex flex-col lg:flex-row gap-10 lg:gap-32 pb-32 lg:pb-80 relative">
         <div className="w-full lg:w-[27.875rem]">
           <h4 className="text-yellow font-semibold text-2xl lg:text-4xl mb-1">About us</h4>
           <p className="text-gray text-base lg:text-xl font-normal">

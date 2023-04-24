@@ -25,7 +25,7 @@ export default function Home() {
         <Hero />
         <NewDrops />
         <Categories />
-        <Review />
+        <Review /> 
         <NewsLetter />
         <Footer />
       </main>
