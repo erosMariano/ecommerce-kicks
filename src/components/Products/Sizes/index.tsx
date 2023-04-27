@@ -1,27 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-interface Size {
-  size: number;
-  enable: boolean;
-}
+interface Size {}
 
 interface SizeElementProps {
-  sizes: Size[];
+  sizes: {
+    size: number;
+    enable: boolean;
+  }[];
+  setSize: (size: number) => void;
 }
 
-function Sizes({ sizes }: SizeElementProps) {
+function Sizes({ sizes, setSize }: SizeElementProps) {
+  const listSizes = sizes.slice(0, sizes.length);
+
   const [selectedSize, setSelectedSize] = useState(
-    sizes.findIndex((size) => size.enable)
+    listSizes.findIndex((size) => size.enable)
   );
 
   function handleSelectSize(index: number) {
-    if (sizes[index].enable) {
+    if (listSizes[index].enable) {
       if (index !== selectedSize) {
         setSelectedSize(index);
       }
     }
   }
 
+  useEffect(() => {
+    setSize(sizes[selectedSize].size);
+  }, [selectedSize, setSize, sizes])
   return (
     <>
       <div className="flex justify-between items-center">
@@ -34,7 +40,7 @@ function Sizes({ sizes }: SizeElementProps) {
       </div>
 
       <div className="flex gap-1">
-        {sizes.map((size, index) => (
+        {listSizes.map((size, index) => (
           <button
             onClick={() => handleSelectSize(index)}
             className={`w-12 h-12 rounded-lg font-medium transition-all ${

@@ -3,9 +3,10 @@ import React, { useState } from "react";
 
 import ArrowPrev from "../../../assets/icons/arrow-prev.svg";
 import ArrowNext from "../../../assets/icons/arrow-next.svg";
+import { urlFor } from "../../../../lib/client";
 
 interface PhotosContainerProps {
-  images: string[] | StaticImageData[];
+  images: object[];
 }
 function PhotosContainer({ images }: PhotosContainerProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,7 +31,7 @@ function PhotosContainer({ images }: PhotosContainerProps) {
           <Image
             width={400}
             height={400}
-            src={slide}
+            src={urlFor(slide).toString()}
             alt={`Imagem ${index + 1}`}
             className="w-full h-full object-contain"
           />
@@ -61,7 +62,7 @@ function PhotosContainer({ images }: PhotosContainerProps) {
             <Image
               width={50}
               height={50}
-              src={slide}
+              src={urlFor(slide).toString()}
               alt={`Imagem ${index + 1}`}
               className="w-full h-full object-cover rounded-xl"
             />

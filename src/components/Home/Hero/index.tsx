@@ -1,9 +1,4 @@
 import Image from "next/image";
-import React from "react";
-
-import NikeMain from "../../../assets/tenis/nike_air_max1.png";
-import NikeMini1 from "../../../assets/tenis/nike_air_max2.png";
-import NikeMini2 from "../../../assets/tenis/nike_air_max3.png";
 
 import BlueButton from "@/components/BlueButton";
 import { urlFor } from "../../../../lib/client";

@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 
 interface ColorsProps {
-  colors: string[];
+  colors: [
+    {
+      code: string;
+      name: string;
+    }
+  ];
+  setColor: (color: string) => void;
 }
-function Colors({ colors }: ColorsProps) {
+function Colors({ colors, setColor }: ColorsProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   function handleActiveColor(index: number) {
     if (index !== activeIndex) {
       setActiveIndex(index);
+      setColor(colors[index].name);
     }
   }
 
@@ -22,12 +29,12 @@ function Colors({ colors }: ColorsProps) {
           <span
             key={index}
             className={`transition-all rounded-full w-12 h-12 flex items-center justify-center border-[3px]`}
-            style={{ borderColor: activeIndex === index ? cor : "transparent" }}
+            style={{ borderColor: activeIndex === index ? cor.code : "transparent" }}
           >
             <button
               onClick={() => handleActiveColor(index)}
               className={`bg-${cor} w-8 h-8 rounded-full`}
-              style={{ backgroundColor: cor }}
+              style={{ backgroundColor: cor.code }}
             />
           </span>
         ))}

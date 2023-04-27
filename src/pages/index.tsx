@@ -12,9 +12,6 @@ import { client } from "../../lib/client";
 import { GetServerSideProps } from "next";
 const rubik = Rubik({ subsets: ["latin"] });
 
-import { urlFor } from "../../lib/client";
-import Image from "next/image";
-
 interface HomeProps {
   products: {
     id: string;
@@ -47,7 +44,7 @@ export default function Home({ products, banner }: HomeProps) {
       </Head>
       <main className={`${rubik.className}`}>
         <Header />
-        <Hero images={banner[0].images} slug={banner[0].slug}/>
+        <Hero images={banner[0].images} slug={banner[0].slug} />
         <NewDrops />
         <Categories />
         <Review />
@@ -75,6 +72,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
 
+
   const banner = bannerData.map((product: any) => {
     return {
       id: product._id,
@@ -86,7 +84,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     };
   });
 
-  console.log(banner);
   return {
     props: {
       products,
